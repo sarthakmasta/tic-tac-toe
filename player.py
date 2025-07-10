@@ -23,7 +23,6 @@ class SmartComputerPlayer(BasePlayer):
         max_marker = self.mark
         opponent = 'O' if player == 'X' else 'X'
 
-        # Check for terminal conditions
         for move in range(9):
             if state.board_state[move] == player:
                 if state.check_winner(move, player):
